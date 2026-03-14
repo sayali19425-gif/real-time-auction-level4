@@ -1,0 +1,165 @@
+.history-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.history-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.08);
+  color: #a0aec0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+/* ── History Card ── */
+.history-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.history-card h2 {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.empty-msg {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.history-table th {
+  text-align: left;
+  color: #718096;
+  padding: 0.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.history-table td {
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #e2e8f0;
+}
+
+.history-table td.address {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #a0aec0;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.history-table td.amount {
+  color: #68d391;
+  font-weight: 600;
+}
+
+/* Highlight top bid row */
+.history-table tr.top-bid td {
+  background: rgba(102, 126, 234, 0.1);
+  color: #a5b4fc;
+}
+
+.history-table tr.top-bid td.amount {
+  color: #ffd700;
+}
+
+/* ── Winner Card ── */
+.winner-card {
+  background: rgba(255, 215, 0, 0.05);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.winner-card h2 {
+  font-size: 1.1rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.winner-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.winner-trophy {
+  font-size: 4rem;
+}
+
+.winner-details {
+  flex: 1;
+}
+
+.winner-label {
+  font-size: 0.75rem;
+  color: #a0aec0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+  margin-top: 0.75rem;
+}
+
+.winner-label:first-child {
+  margin-top: 0;
+}
+
+.winner-address {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+  word-break: break-all;
+}
+
+.winner-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffd700;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .history-container { padding: 1rem; }
+  .history-header h1 { font-size: 1.2rem; }
+  .winner-trophy { font-size: 2.5rem; }
+  .winner-amount { font-size: 1.5rem; }
+  .history-table th:last-child,
+  .history-table td:last-child { display: none; }
+}

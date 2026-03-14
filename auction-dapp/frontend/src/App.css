@@ -1,0 +1,161 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0a0a1a;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.app-container { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.app-header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.wallet-section { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.wallet-address { font-size: 0.8rem; color: #a0aec0; word-break: break-all; }
+
+.auction-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.info-card .label { font-size: 0.75rem; color: #a0aec0; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem; }
+.info-card .value { font-size: 1.4rem; font-weight: 700; color: #667eea; }
+.info-card .timer { font-size: 1.4rem; font-weight: 700; color: #f6ad55; font-variant-numeric: tabular-nums; }
+
+.bid-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bid-panel {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.bid-panel h3 { font-size: 1rem; margin-bottom: 1rem; color: #e2e8f0; }
+
+.bid-panel input {
+  width: 100%;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  color: white;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.bid-panel input:focus { border-color: #667eea; }
+
+.bid-panel button {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.bid-panel button:hover { opacity: 0.9; }
+.bid-panel button:active { transform: scale(0.98); }
+
+.token-balance {
+  font-size: 0.75rem;
+  background: rgba(102,126,234,0.2);
+  color: #a5b4fc;
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.bid-history {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bid-history h2 { font-size: 1.1rem; margin-bottom: 1rem; color: #e2e8f0; }
+
+.history-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.history-table th { text-align: left; color: #718096; padding: 0.5rem; font-weight: 500; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.history-table td { padding: 0.6rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); color: #e2e8f0; }
+.history-table td.address { font-family: monospace; font-size: 0.75rem; color: #a0aec0; max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #2d3748;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  font-size: 0.9rem;
+  border-left: 4px solid #667eea;
+  z-index: 1000;
+  max-width: 320px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 768px) {
+  .app-container { padding: 0.75rem; }
+  .app-header { flex-direction: column; text-align: center; padding: 1rem; }
+  .app-header h1 { font-size: 1.2rem; }
+  .bid-panels { grid-template-columns: 1fr; gap: 1rem; }
+  .auction-info { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .info-card { padding: 0.75rem; }
+  .info-card .value, .info-card .timer { font-size: 1.1rem; }
+  .bid-panel { padding: 1rem; }
+  .history-table th:last-child, .history-table td:last-child { display: none; }
+  .toast { left: 1rem; right: 1rem; bottom: 1rem; max-width: unset; }
+}
+
+@media (max-width: 400px) {
+  .auction-info { grid-template-columns: 1fr; }
+  .app-header h1 { font-size: 1rem; }
+}
