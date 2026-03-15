@@ -3,27 +3,27 @@
 A production-ready decentralized auction platform built with React (Vite) and two inter-connected Soroban smart contracts on Stellar Testnet.
 
 ---
+🔗 Live Demo
 
-## 🔗 Live Demo
-
-**[https://real-time-auction-level4.vercel.app/](https://real-time-auction-level4.vercel.app/)**
+https://real-time-auction-level4.vercel.app/
 
 ---
 
-## ✅ CI/CD Pipeline Running
+🎥 Demo Video
 
-[![CI/CD Pipeline](https://github.com/sayali19425-gif/Real-time-auction-bid/actions/workflows/ci.yml/badge.svg)](https://github.com/sayali19425-gif/Real-time-auction-bid/actions/workflows/ci.yml)
+https://drive.google.com/file/d/1lcefv5ondDaTJN8SP-Y2sVt7SSImHTA6/view?usp=sharing
 
+---
 
+✅ CI/CD Pipeline Running
+
+https://github.com/sayali19425-gif/real-time-auction-level4/actions/workflows/ci.yml
 
 ---
 
 ## 📱 Mobile Responsive View
 
-> *(Add your mobile screenshot here)*
-> Open Chrome → F12 → Ctrl+Shift+M → Select iPhone 12 Pro → Ctrl+Shift+P → Capture screenshot
-
----
+![Mobile View](screenshots/mobile-view.png)
 
 ## 📋 Contract Addresses & Transaction Hashes
 
