@@ -21,14 +21,8 @@ https://github.com/sayali19425-gif/real-time-auction-level4/actions/workflows/ci
 
 ---
 
-## 📱 Mobile Responsive View
-
-## 📱 Mobile View
-
-## 📱 Mobile View
-
-## 📱 Mobile View
-
+📱 Mobile Responsive View
+<p align="center"> <img src="./mobile-view-connect.png" width="250"> <img src="./mobile-view-auction.png" width="250"> <img src="./mobile-view-winner.png" width="250"> </p>
 mobile-view-connect.png
 mobile-view-auction.png
 mobile-view-winner.png
