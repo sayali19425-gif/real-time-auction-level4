@@ -24,9 +24,9 @@ https://github.com/sayali19425-gif/real-time-auction-level4/actions/workflows/ci
 ## 📱 Mobile Responsive View
 
 <p align="center">
-  <img src="mobile-view-connect.png.png" width="220">
-  <img src="mobile-view-auction.png.png" width="220">
-  <img src="mobile-view-winner.png.png" width="220">
+  <img src="auction-dapp/frontend/screenshot/mobile-view-connect.png" width="250"/>
+  <img src="auction-dapp/frontend/screenshot/mobile-view-auction.png" width="250"/>
+  <img src="auction-dapp/frontend/screenshot/mobile-view-winner.png" width="250"/>
 </p>
 
 ## 📋 Contract Addresses & Transaction Hashes
