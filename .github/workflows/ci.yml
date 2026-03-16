@@ -19,9 +19,30 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Find and build frontend
-        run: |
-          find . -name "package.json" -not -path "*/node_modules/*" -maxdepth 5
-          cd $(find . -name "vite.config.js" -not -path "*/node_modules/*" | head -1 | xargs dirname)
-          npm ci
-          npm run build
+      - name: Install dependencies
+        working-directory: auction-dapp/frontend
+        run: npm ci
+
+      - name: Build
+        working-directory: auction-dapp/frontend
+        run: npm run build
+
+  build-contracts:
+    name: Build Soroban Contracts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+
+      - name: Build AuctionToken
+        working-directory: auction-dapp/contract/auction_token
+        run: cargo build --target wasm32-unknown-unknown --release
+
+      - name: Build AuctionBid v2
+        working-directory: auction-dapp/contract/auction_bid_v2
+        run: cargo build --target wasm32-unknown-unknown --release
