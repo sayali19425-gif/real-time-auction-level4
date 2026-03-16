@@ -19,6 +19,10 @@ https://drive.google.com/file/d/1lcefv5ondDaTJN8SP-Y2sVt7SSImHTA6/view?usp=shari
 
 https://github.com/sayali19425-gif/real-time-auction-level4/actions/workflows/ci.yml
 
+## ✅ CI/CD Pipeline Running
+
+![CI/CD Pipeline](auction-dapp/frontend/screenshot/ci-cd-pipeline.png)
+
 ---
 
 ## 📱 Mobile Responsive View
