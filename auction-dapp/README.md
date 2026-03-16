@@ -24,13 +24,13 @@ https://github.com/sayali19425-gif/real-time-auction-level4/actions/workflows/ci
 ## 📱 Mobile View
 
 ### Connect Wallet
-![Connect Wallet](auction-dapp/frontend/screenshot/mobile-view-connect.png.png)
+![Connect Wallet](./auction-dapp/frontend/screenshot/mobile-view-connect.png.png)
 
 ### Auction Bidding
-![Auction Bidding](auction-dapp/frontend/screenshot/mobile-view-auction.png.png)
+![Auction Bidding](./auction-dapp/frontend/screenshot/mobile-view-auction.png.png)
 
 ### Auction Winner
-![Auction Winner](auction-dapp/frontend/screenshot/mobile-view-winner.png.png)
+![Auction Winner](./auction-dapp/frontend/screenshot/mobile-view-winner.png.png)
 
 ---
 
