@@ -23,7 +23,16 @@ https://github.com/sayali19425-gif/real-time-auction-level4/actions/workflows/ci
 
 ## 📱 Mobile Responsive View
 
-![Mobile View](screenshots/mobile-view.png)
+## 📱 Mobile View
+
+## 📱 Mobile View
+
+## 📱 Mobile View
+
+mobile-view-connect.png
+mobile-view-auction.png
+mobile-view-winner.png
+
 
 ## 📋 Contract Addresses & Transaction Hashes
 
